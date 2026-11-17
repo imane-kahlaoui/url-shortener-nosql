@@ -33,8 +33,8 @@ Le projet suit une architecture modulaire 3-tiers :
 * Création de liens avec **alias personnalisé**, **date d'expiration** et **protection par mot de passe**.
 * Tableau de bord personnel (`dashboard.php`) avec suivi des clics, recherche en temps réel, modification et suppression de liens.
 
-### Espace Administrateur & Avancé
-* Gestion et consultation des liens et des utilisateurs de la plateforme.
+### Espace Administrateur
+* Vue d'ensemble de la plateforme (`admin/admin.php`) et modération globale des liens (`admin_delete.php`).
 
 ---
 
@@ -60,3 +60,30 @@ Le projet suit une architecture modulaire 3-tiers :
 ## 📁 Structure du Projet
 
 ```text
+url-shortener/
+├── admin/
+│   ├── admin.php           # Interface d'administration globale
+│   └── admin_delete.php    # Suppression et modération des liens côté admin
+├── config/
+│   └── redis.php           # Configuration et connexion à Redis
+├── css/
+│   └── style.css           # Feuille de style personnalisée
+├── functions/
+│   └── riak.php            # Client HTTP cURL pour communiquer avec Riak KV
+├── js/
+│   └── app.js              # Interactions DOM (copie, QR code, filtre tableau)
+├── public/
+│   ├── dashboard.php       # Espace personnel utilisateur
+│   ├── delete.php          # Suppression d'un lien par son propriétaire
+│   ├── edit.php            # Édition d'un lien existant
+│   ├── index.php           # Page d'accueil et générateur de liens
+│   ├── login.php           # Connexion
+│   ├── logout.php          # Déconnexion et destruction de session
+│   ├── redirect.php        # Moteur de redirection et vérification mot de passe
+│   └── register.php        # Inscription
+├── screenshots/
+│   ├── accueil.png         # Aperçu de la page d'accueil
+│   ├── admin.png           # Aperçu du formulaire avancé
+│   └── dashboard.png       # Aperçu du tableau de bord
+├── .gitignore              # Fichiers ignorés par Git
+└── README.md               # Documentation complète du projet
