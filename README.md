@@ -42,17 +42,17 @@ Le projet suit une architecture modulaire 3-tiers :
 
 ### Page d'accueil (Mode Visiteur)
 <p align="center">
-  <img src="screenshots/accueil.jpg" alt="Page d'accueil" width="85%">
+  <img src="screenshots/accueil.png" alt="Page d'accueil" width="85%">
 </p>
 
 ### Création de lien avancé (Utilisateur connecté)
 <p align="center">
-  <img src="screenshots/admin.jpg" alt="Création avancée" width="85%">
+  <img src="screenshots/admin.png" alt="Création avancée" width="85%">
 </p>
 
 ### Tableau de Bord Utilisateur
 <p align="center">
-  <img src="screenshots/dashboard.jpg" alt="Dashboard Utilisateur" width="85%">
+  <img src="screenshots/dashboard.png" alt="Dashboard Utilisateur" width="85%">
 </p>
 
 ---
