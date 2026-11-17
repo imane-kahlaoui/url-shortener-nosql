@@ -75,15 +75,4 @@ url-shortener/
 ├── public/
 │   ├── dashboard.php       # Espace personnel utilisateur
 │   ├── delete.php          # Suppression d'un lien par son propriétaire
-│   ├── edit.php            # Édition d'un lien existant
-│   ├── index.php           # Page d'accueil et générateur de liens
-│   ├── login.php           # Connexion
-│   ├── logout.php          # Déconnexion et destruction de session
-│   ├── redirect.php        # Moteur de redirection et vérification mot de passe
-│   └── register.php        # Inscription
-├── screenshots/
-│   ├── accueil.png         # Aperçu de la page d'accueil
-│   ├── admin.png           # Aperçu du formulaire avancé
-│   └── dashboard.png       # Aperçu du tableau de bord
-├── .gitignore              # Fichiers ignorés par Git
-└── README.md               # Documentation complète du projet
+│   
