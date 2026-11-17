@@ -10,7 +10,7 @@ Application web moderne de raccourcissement d'URL développée en **PHP natif** 
 
 ---
 
-## Architecture & Technologies
+## 🏗️ Architecture & Technologies
 
 Le projet suit une architecture modulaire 3-tiers :
 * **Frontend :** HTML5, CSS3 personnalisé (design moderne, ombres douces, responsive), JavaScript (copie en 1 clic, téléchargement QR Code, recherche dynamique) et Bootstrap 5.
@@ -20,7 +20,7 @@ Le projet suit une architecture modulaire 3-tiers :
 
 ---
 
-## Fonctionnalités Principales
+## ✨ Fonctionnalités Principales
 
 ### Visiteurs (Anonymes)
 * Génération instantanée d'un lien court unique.
@@ -30,37 +30,33 @@ Le projet suit une architecture modulaire 3-tiers :
 
 ### Utilisateurs Inscrits
 * Authentification sécurisée (Inscription / Connexion via Redis).
-* Création de liens avec **alias personnalisé** et **protection par mot de passe**.
+* Création de liens avec **alias personnalisé**, **date d'expiration** et **protection par mot de passe**.
 * Tableau de bord personnel (`dashboard.php`) avec suivi des clics, recherche en temps réel, modification et suppression de liens.
 
-### Espace Administrateur
-* Vue d'ensemble de la plateforme (`admin/admin.php`).
-* Consultation des utilisateurs enregistrés (Redis) et modération globale des liens (Riak).
+### Espace Administrateur & Avancé
+* Gestion et consultation des liens et des utilisateurs de la plateforme.
 
 ---
 
-## Structure du Projet
+## 📸 Aperçu de l'Application
+
+### Page d'accueil (Mode Visiteur)
+<p align="center">
+  <img src="screenshots/accueil.jpg" alt="Page d'accueil" width="85%">
+</p>
+
+### Création de lien avancé (Utilisateur connecté)
+<p align="center">
+  <img src="screenshots/admin.jpg" alt="Création avancée" width="85%">
+</p>
+
+### Tableau de Bord Utilisateur
+<p align="center">
+  <img src="screenshots/dashboard.jpg" alt="Dashboard Utilisateur" width="85%">
+</p>
+
+---
+
+## 📁 Structure du Projet
 
 ```text
-url-shortener/
-├── admin/
-│   └── admin.php           # Interface d'administration globale
-├── config/
-│   ├── redis.php           # Configuration et connexion à Redis
-│   └── riak.php            # Configuration de l'endpoint HTTP Riak
-├── css/
-│   └── style.css           # Feuille de style personnalisée
-├── functions/
-│   ├── auth.php            # Logique d'authentification et sessions
-│   ├── links.php           # Logique métier de création/redirection des liens
-│   └── riak.php            # Client HTTP cURL pour communiquer avec Riak KV
-├── js/
-│   └── app.js              # Interactions DOM (copie, QR code, filtre tableau)
-├── public/
-│   ├── index.php           # Page d'accueil et générateur de liens
-│   ├── dashboard.php       # Espace personnel utilisateur
-│   ├── login.php           # Connexion
-│   ├── register.php        # Inscription
-│   ├── edit.php            # Édition d'un lien existant
-│   └── redirect.php        # Moteur de redirection et vérification mot de passe
-└── .gitignore              # Fichiers ignorés par Git
